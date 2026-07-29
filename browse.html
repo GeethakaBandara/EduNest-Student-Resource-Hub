@@ -29,3 +29,56 @@
       </div>
     </div>
   </nav>
+
+  <div class="container">
+    <h1 class="fw-bold mb-4">Browse resource</h1>
+
+    <div class="row g-4">
+
+    
+      <div class="col-lg-3">
+        <div class="bg-white rounded p-3 shadow-sm mb-3">
+          <p class="fw-bold text-uppercase small mb-3">Category</p>
+
+          <div class="form-check mb-2">
+            <input class="form-check-input category-checkbox" type="checkbox" value="Notes" id="catNotes" checked>
+            <label class="form-check-label" for="catNotes">Notes</label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input category-checkbox" type="checkbox" value="Assignment" id="catAssignment">
+            <label class="form-check-label" for="catAssignment">Assignment</label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input category-checkbox" type="checkbox" value="Pass papers" id="catPass">
+            <label class="form-check-label" for="catPass">Pass papers</label>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input category-checkbox" type="checkbox" value="Practice problem" id="catPractice">
+            <label class="form-check-label" for="catPractice">Practice problem</label>
+          </div>
+
+          <p class="fw-bold text-uppercase small mb-2">Study year</p>
+          <select class="form-select mb-3">
+            <option selected>Select Year</option>
+            <option>Year 1</option>
+            <option>Year 2</option>
+            <option>Year 3</option>
+            <option>Year 4</option>
+          </select>
+
+          <p class="fw-bold text-uppercase small mb-2">Semester</p>
+          <select class="form-select mb-3">
+            <option selected>Select Semester</option>
+            <option>Semester 1</option>
+            <option>Semester 2</option>
+          </select>
+
+          <button class="btn btn-primary w-100" id="applyFiltersBtn">Apply filters</button>
+        </div>
+
+        <div class="help-box">
+          <h5 class="fw-bold">Need help?</h5>
+          <p class="small">Contact our academic advisors for resource guidance.</p>
+          <a href="contact.html">Message us</a>
+        </div>
+      </div>
