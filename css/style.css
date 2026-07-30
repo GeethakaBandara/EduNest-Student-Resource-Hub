@@ -103,3 +103,30 @@ body {
   color: #fff;
   font-weight: 600;
 }
+
+.upload-dropzone {
+  border: 2px dashed #c7cdd6;
+  border-radius: 12px;
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.upload-dropzone.dragover {
+  background-color: #eef2ff;
+  border-color: #3b6fe0;
+}
+
+.upload-icon-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #e4e9fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px auto;
+  font-size: 1.8rem;
+  color: #3b6fe0;
+}
