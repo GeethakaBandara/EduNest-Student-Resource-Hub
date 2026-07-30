@@ -156,3 +156,13 @@ footer a {
 footer a:hover {
   color: #3b6fe0 !important;
 }
+
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+.was-validated .form-control:valid,
+.form-control.is-valid {
+  border-color: #198754;
+}
