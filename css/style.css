@@ -130,3 +130,13 @@ body {
   font-size: 1.8rem;
   color: #3b6fe0;
 }
+
+.auth-card,
+.contact-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 40px;
+  max-width: 500px;
+  margin: 40px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
