@@ -21,7 +21,7 @@
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="browser.html">Browse</a></li>
+          <li class="nav-item"><a class="nav-link" href="browse.html">Browse</a></li>
           <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
           <li class="nav-item"><a class="nav-link" href="upload.html">Upload</a></li>
         </ul>
@@ -29,3 +29,39 @@
       </div>
     </div>
   </nav>
+
+  <div class="container">
+    <h1 class="fw-bold mb-2">Contact</h1>
+    <hr class="mb-4">
+
+  
+    <div class="alert alert-success d-none" id="contactSuccessAlert">
+      &#10003; Thank you! Your message has been sent successfully.
+    </div>
+
+    <div class="contact-card">
+      <h4 class="fw-bold mb-4">Send us a message</h4>
+
+      <form id="contactForm" novalidate>
+        <div class="mb-3">
+          <label for="fullName" class="form-label">Full name</label>
+          <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+          <div class="invalid-feedback">Please enter your full name.</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="name@tec.rjt.ac.lk">
+          <div class="invalid-feedback">Please enter a valid email address.</div>
+        </div>
+
+        <div class="mb-4">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Tell us how we can help..."></textarea>
+          <div class="invalid-feedback">Please enter your message.</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Submit</button>
+      </form>
+    </div>
+  </div>
