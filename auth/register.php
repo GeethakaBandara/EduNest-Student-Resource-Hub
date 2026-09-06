@@ -1,6 +1,7 @@
 <?php
-require_once '../includes/db.php';
+// Start session and load helpers FIRST, then load DB connection
 require_once '../includes/functions.php';
+require_once '../includes/db.php';
 
 $error = '';
 $success = '';
@@ -107,7 +108,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
   </footer>
 
+  <!-- Bootstrap JS only - we do NOT include script.js here because it may prevent form submission -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../js/script.js"></script>
 </body>
 </html>

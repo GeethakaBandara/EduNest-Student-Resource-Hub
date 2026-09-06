@@ -2,7 +2,10 @@
 // includes/functions.php
 // Contains reusable helper functions
 
-session_start(); // Start session on all pages that include this file
+// Only start session if it hasn't been started yet (prevents errors)
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 /**
  * Sanitize user input to prevent XSS (Cross-Site Scripting)
