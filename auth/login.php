@@ -22,7 +22,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             session_regenerate_id(true); // Prevent session fixation
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['username'] = $user['username'];
-            redirect('../dashboard.php');
+            
+            // Build an absolute URL so the redirect works from any folder depth
+            $base_url = (isset($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'];
+            $project_path = rtrim(dirname(dirname($_SERVER['SCRIPT_NAME'])), '/');
+            redirect($base_url . $project_path . '/dashboard.php');
         } else {
             // Login failed
             $error = "Invalid email or password.";
