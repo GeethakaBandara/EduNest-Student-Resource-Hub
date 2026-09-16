@@ -21,10 +21,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             header("Location: ../dashboard.php");
             exit();
         } else {
-            $error = "විද්‍යුත් තැපෑල හෝ මුරපදය වැරදියි!";
+            $error = "in correct";
         }
     } else {
-        $error = "කරුණාකර සියලු තොරතුරු ඇතුළත් කරන්න.";
+        $error = "try again";
     }
 }
 ?>
